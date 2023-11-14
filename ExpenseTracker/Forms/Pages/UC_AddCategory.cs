@@ -27,9 +27,9 @@ namespace ExpenseTracker.Forms
         {
             ExpenseTrakerDbContext _db = new ExpenseTrakerDbContext();
             var categories = _db.Categories.Where(c => c.Userid == CurrentUser.userId).ToList();
-            foreach(var categ in categories)
+            foreach (var categ in categories)
             {
-                if(categ.Name == txtCategoryName.Text)
+                if (categ.Name == txtCategoryName.Text)
                 {
                     MessageBox.Show("Категория с таким именем уже существует!");
                     return;

@@ -249,15 +249,15 @@ namespace ExpenseTracker.Service
 
                     if (mainForm.ComboCurrency.SelectedIndex == 0)
                     {
-                        siticoneButton.Text = note.Text + " | " + Math.Round((decimal)note.Ruprice, 2) + "Ru";
+                        siticoneButton.Text = "Название: " + note.Text + " | Дата: " + note.Date +  " | Цена: " + Math.Round((decimal)note.Ruprice, 2) + "Ru";
                     }
                     else if (mainForm.ComboCurrency.SelectedIndex == 1)
                     {
-                        siticoneButton.Text = note.Text + " | " + Math.Round((decimal)note.Brprice, 2) + "Br";
+                        siticoneButton.Text = "Название: " + note.Text + " | Дата: " + note.Date + " | Цена: " + Math.Round((decimal)note.Brprice, 2) + "Br";
                     }
                     else if (mainForm.ComboCurrency.SelectedIndex == 2)
                     {
-                        siticoneButton.Text = note.Text + " | " + Math.Round((decimal)note.Usdprice, 2) + "Usd";
+                        siticoneButton.Text = "Название: " + note.Text + " | Дата: " + note.Date + " | Цена: " + Math.Round((decimal)note.Usdprice, 2) + "Usd";
                     }
 
                     siticoneButton.TextAlign = HorizontalAlignment.Left;

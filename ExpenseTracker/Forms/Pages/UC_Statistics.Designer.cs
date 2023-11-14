@@ -55,29 +55,29 @@
             // 
             dateTime1.BorderRadius = 20;
             dateTime1.Checked = true;
-            dateTime1.FillColor = Color.White;
+            dateTime1.FillColor = Color.FromArgb(94, 148, 255);
             dateTime1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dateTime1.Format = DateTimePickerFormat.Long;
-            dateTime1.Location = new Point(18, 27);
+            dateTime1.Location = new Point(30, 27);
             dateTime1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dateTime1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dateTime1.Name = "dateTime1";
-            dateTime1.Size = new Size(185, 45);
+            dateTime1.Size = new Size(233, 45);
             dateTime1.TabIndex = 14;
-            dateTime1.Value = new DateTime(2000, 11, 13, 16, 51, 0, 0);
+            dateTime1.Value = new DateTime(2023, 11, 14, 19, 1, 23, 230);
             // 
             // dateTime2
             // 
             dateTime2.BorderRadius = 20;
             dateTime2.Checked = true;
-            dateTime2.FillColor = Color.White;
+            dateTime2.FillColor = Color.FromArgb(94, 148, 255);
             dateTime2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dateTime2.Format = DateTimePickerFormat.Long;
             dateTime2.Location = new Point(308, 27);
             dateTime2.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dateTime2.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dateTime2.Name = "dateTime2";
-            dateTime2.Size = new Size(180, 45);
+            dateTime2.Size = new Size(244, 45);
             dateTime2.TabIndex = 13;
             dateTime2.Value = new DateTime(2023, 11, 13, 16, 51, 23, 936);
             // 
@@ -108,15 +108,16 @@
             btnSetFilter.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnSetFilter.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnSetFilter.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSetFilter.Dock = DockStyle.Right;
             btnSetFilter.FillColor2 = Color.FromArgb(94, 148, 255);
             btnSetFilter.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             btnSetFilter.ForeColor = Color.White;
-            btnSetFilter.Location = new Point(582, 4);
+            btnSetFilter.Location = new Point(586, 0);
             btnSetFilter.Name = "btnSetFilter";
             btnSetFilter.ShadowDecoration.BorderRadius = 30;
             btnSetFilter.ShadowDecoration.Depth = 5;
             btnSetFilter.ShadowDecoration.Enabled = true;
-            btnSetFilter.Size = new Size(264, 89);
+            btnSetFilter.Size = new Size(264, 99);
             btnSetFilter.TabIndex = 10;
             btnSetFilter.Text = "Фильтровать";
             btnSetFilter.Click += btnSetFilter_Click;
@@ -151,9 +152,9 @@
         public Siticone.Desktop.UI.WinForms.SiticonePanel pnlFilters;
         public Siticone.Desktop.UI.WinForms.SiticonePanel pnlDiagram;
         private Siticone.Desktop.UI.WinForms.SiticoneGradientButton btnSetFilter;
-        private Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker dateTime1;
         private Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker dateTime2;
         private Label label2;
         private Label label1;
+        private Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker dateTime1;
     }
 }

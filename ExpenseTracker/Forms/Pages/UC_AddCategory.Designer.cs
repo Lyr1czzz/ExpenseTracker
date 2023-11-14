@@ -32,6 +32,7 @@
             btnAddCategory = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
             siticoneHtmlLabel2 = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
             txtCategoryName = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            codeeloDateTimePicker1 = new CodeeloUI.Controls.CodeeloDateTimePicker();
             SuspendLayout();
             // 
             // siticoneHtmlLabel1
@@ -99,11 +100,32 @@
             txtCategoryName.Size = new Size(250, 45);
             txtCategoryName.TabIndex = 7;
             // 
+            // codeeloDateTimePicker1
+            // 
+            codeeloDateTimePicker1.BorderColor = Color.Black;
+            codeeloDateTimePicker1.BorderSize = 1;
+            codeeloDateTimePicker1.CalendarFont = null;
+            codeeloDateTimePicker1.CalendarForeColor = Color.Empty;
+            codeeloDateTimePicker1.CalendarMonthBackground = Color.Empty;
+            codeeloDateTimePicker1.CalendarTitleBackColor = Color.Empty;
+            codeeloDateTimePicker1.CalendarTitleForeColor = Color.Empty;
+            codeeloDateTimePicker1.CalendarTrailingForeColor = Color.Empty;
+            codeeloDateTimePicker1.Checked = false;
+            codeeloDateTimePicker1.FillColor = Color.White;
+            codeeloDateTimePicker1.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            codeeloDateTimePicker1.Location = new Point(339, 35);
+            codeeloDateTimePicker1.MinimumSize = new Size(0, 35);
+            codeeloDateTimePicker1.Name = "codeeloDateTimePicker1";
+            codeeloDateTimePicker1.Size = new Size(250, 35);
+            codeeloDateTimePicker1.TabIndex = 10;
+            codeeloDateTimePicker1.TextColor = Color.Black;
+            // 
             // UC_AddCategory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(codeeloDateTimePicker1);
             Controls.Add(btnAddCategory);
             Controls.Add(siticoneHtmlLabel2);
             Controls.Add(txtCategoryName);
@@ -120,5 +142,6 @@
         private Siticone.Desktop.UI.WinForms.SiticoneGradientButton btnAddCategory;
         private Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel siticoneHtmlLabel2;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtCategoryName;
+        private CodeeloUI.Controls.CodeeloDateTimePicker codeeloDateTimePicker1;
     }
 }
