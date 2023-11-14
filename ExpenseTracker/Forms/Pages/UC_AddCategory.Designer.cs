@@ -32,7 +32,6 @@
             btnAddCategory = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
             siticoneHtmlLabel2 = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
             txtCategoryName = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            codeeloDateTimePicker1 = new CodeeloUI.Controls.CodeeloDateTimePicker();
             SuspendLayout();
             // 
             // siticoneHtmlLabel1
@@ -47,6 +46,7 @@
             // 
             // btnAddCategory
             // 
+            btnAddCategory.Anchor = AnchorStyles.None;
             btnAddCategory.BackColor = Color.Transparent;
             btnAddCategory.BorderRadius = 30;
             btnAddCategory.DisabledState.BorderColor = Color.DarkGray;
@@ -57,18 +57,19 @@
             btnAddCategory.FillColor2 = Color.FromArgb(94, 148, 255);
             btnAddCategory.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             btnAddCategory.ForeColor = Color.White;
-            btnAddCategory.Location = new Point(300, 346);
+            btnAddCategory.Location = new Point(300, 339);
             btnAddCategory.Name = "btnAddCategory";
             btnAddCategory.ShadowDecoration.BorderRadius = 30;
             btnAddCategory.ShadowDecoration.Depth = 5;
             btnAddCategory.ShadowDecoration.Enabled = true;
-            btnAddCategory.Size = new Size(250, 87);
+            btnAddCategory.Size = new Size(250, 85);
             btnAddCategory.TabIndex = 9;
             btnAddCategory.Text = "Создать";
             btnAddCategory.Click += btnAddCategory_Click;
             // 
             // siticoneHtmlLabel2
             // 
+            siticoneHtmlLabel2.Anchor = AnchorStyles.None;
             siticoneHtmlLabel2.BackColor = Color.Transparent;
             siticoneHtmlLabel2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             siticoneHtmlLabel2.Location = new Point(316, 182);
@@ -79,6 +80,8 @@
             // 
             // txtCategoryName
             // 
+            txtCategoryName.Anchor = AnchorStyles.None;
+            txtCategoryName.AutoSize = true;
             txtCategoryName.BackColor = Color.Transparent;
             txtCategoryName.BorderRadius = 20;
             txtCategoryName.DefaultText = "";
@@ -90,6 +93,7 @@
             txtCategoryName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtCategoryName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtCategoryName.Location = new Point(300, 260);
+            txtCategoryName.MaxLength = 20;
             txtCategoryName.Name = "txtCategoryName";
             txtCategoryName.PasswordChar = '\0';
             txtCategoryName.PlaceholderText = "category name";
@@ -100,32 +104,11 @@
             txtCategoryName.Size = new Size(250, 45);
             txtCategoryName.TabIndex = 7;
             // 
-            // codeeloDateTimePicker1
-            // 
-            codeeloDateTimePicker1.BorderColor = Color.Black;
-            codeeloDateTimePicker1.BorderSize = 1;
-            codeeloDateTimePicker1.CalendarFont = null;
-            codeeloDateTimePicker1.CalendarForeColor = Color.Empty;
-            codeeloDateTimePicker1.CalendarMonthBackground = Color.Empty;
-            codeeloDateTimePicker1.CalendarTitleBackColor = Color.Empty;
-            codeeloDateTimePicker1.CalendarTitleForeColor = Color.Empty;
-            codeeloDateTimePicker1.CalendarTrailingForeColor = Color.Empty;
-            codeeloDateTimePicker1.Checked = false;
-            codeeloDateTimePicker1.FillColor = Color.White;
-            codeeloDateTimePicker1.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            codeeloDateTimePicker1.Location = new Point(339, 35);
-            codeeloDateTimePicker1.MinimumSize = new Size(0, 35);
-            codeeloDateTimePicker1.Name = "codeeloDateTimePicker1";
-            codeeloDateTimePicker1.Size = new Size(250, 35);
-            codeeloDateTimePicker1.TabIndex = 10;
-            codeeloDateTimePicker1.TextColor = Color.Black;
-            // 
             // UC_AddCategory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
-            Controls.Add(codeeloDateTimePicker1);
             Controls.Add(btnAddCategory);
             Controls.Add(siticoneHtmlLabel2);
             Controls.Add(txtCategoryName);
@@ -142,6 +125,5 @@
         private Siticone.Desktop.UI.WinForms.SiticoneGradientButton btnAddCategory;
         private Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel siticoneHtmlLabel2;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtCategoryName;
-        private CodeeloUI.Controls.CodeeloDateTimePicker codeeloDateTimePicker1;
     }
 }

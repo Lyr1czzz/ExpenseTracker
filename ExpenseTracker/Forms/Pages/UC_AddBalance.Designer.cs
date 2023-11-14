@@ -64,6 +64,7 @@
             // 
             // btnAddBalance
             // 
+            btnAddBalance.Anchor = AnchorStyles.None;
             btnAddBalance.BackColor = Color.Transparent;
             btnAddBalance.BorderRadius = 30;
             btnAddBalance.DisabledState.BorderColor = Color.DarkGray;
@@ -74,21 +75,23 @@
             btnAddBalance.FillColor2 = Color.FromArgb(94, 148, 255);
             btnAddBalance.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             btnAddBalance.ForeColor = Color.White;
-            btnAddBalance.Location = new Point(298, 319);
+            btnAddBalance.Location = new Point(300, 339);
             btnAddBalance.Name = "btnAddBalance";
             btnAddBalance.ShadowDecoration.BorderRadius = 30;
             btnAddBalance.ShadowDecoration.Depth = 5;
             btnAddBalance.ShadowDecoration.Enabled = true;
-            btnAddBalance.Size = new Size(250, 87);
+            btnAddBalance.Size = new Size(250, 85);
             btnAddBalance.TabIndex = 6;
             btnAddBalance.Text = "Пололнить";
             btnAddBalance.Click += btnAddBalance_Click;
             // 
             // siticoneHtmlLabel2
             // 
+            siticoneHtmlLabel2.Anchor = AnchorStyles.None;
+            siticoneHtmlLabel2.AutoSize = false;
             siticoneHtmlLabel2.BackColor = Color.Transparent;
             siticoneHtmlLabel2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            siticoneHtmlLabel2.Location = new Point(329, 157);
+            siticoneHtmlLabel2.Location = new Point(316, 182);
             siticoneHtmlLabel2.Name = "siticoneHtmlLabel2";
             siticoneHtmlLabel2.Size = new Size(196, 33);
             siticoneHtmlLabel2.TabIndex = 5;
@@ -96,6 +99,7 @@
             // 
             // txtPrice
             // 
+            txtPrice.Anchor = AnchorStyles.None;
             txtPrice.BackColor = Color.Transparent;
             txtPrice.BorderRadius = 20;
             txtPrice.DefaultText = "";
@@ -106,7 +110,8 @@
             txtPrice.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPrice.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtPrice.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPrice.Location = new Point(298, 233);
+            txtPrice.Location = new Point(300, 260);
+            txtPrice.MaxLength = 20;
             txtPrice.Name = "txtPrice";
             txtPrice.PasswordChar = '\0';
             txtPrice.PlaceholderText = "price";

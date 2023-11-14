@@ -38,6 +38,7 @@
             ComboCurrency = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
             siticoneDragControl1 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(components);
             pnlHeader = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            siticoneControlBox3 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             btnExit = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             btnAddCategory = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
@@ -46,7 +47,6 @@
             btnAddBalance = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(components);
             pnlMain = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            siticoneControlBox3 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             pnlLeft.SuspendLayout();
             pnlProfil.SuspendLayout();
             pnlHeader.SuspendLayout();
@@ -147,6 +147,22 @@
             pnlHeader.ShadowDecoration.Shadow = new Padding(3, 3, 3, 5);
             pnlHeader.Size = new Size(978, 73);
             pnlHeader.TabIndex = 1;
+            // 
+            // siticoneControlBox3
+            // 
+            siticoneControlBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            siticoneControlBox3.BackColor = Color.Transparent;
+            siticoneControlBox3.BorderRadius = 15;
+            siticoneControlBox3.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
+            siticoneControlBox3.FillColor = Color.FromArgb(94, 148, 255);
+            siticoneControlBox3.IconColor = Color.White;
+            siticoneControlBox3.Location = new Point(846, 12);
+            siticoneControlBox3.Name = "siticoneControlBox3";
+            siticoneControlBox3.ShadowDecoration.BorderRadius = 20;
+            siticoneControlBox3.ShadowDecoration.Depth = 5;
+            siticoneControlBox3.ShadowDecoration.Enabled = true;
+            siticoneControlBox3.Size = new Size(36, 36);
+            siticoneControlBox3.TabIndex = 8;
             // 
             // btnExit
             // 
@@ -275,22 +291,6 @@
             pnlMain.Name = "pnlMain";
             pnlMain.Size = new Size(978, 686);
             pnlMain.TabIndex = 2;
-            // 
-            // siticoneControlBox3
-            // 
-            siticoneControlBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            siticoneControlBox3.BackColor = Color.Transparent;
-            siticoneControlBox3.BorderRadius = 15;
-            siticoneControlBox3.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
-            siticoneControlBox3.FillColor = Color.FromArgb(94, 148, 255);
-            siticoneControlBox3.IconColor = Color.White;
-            siticoneControlBox3.Location = new Point(846, 12);
-            siticoneControlBox3.Name = "siticoneControlBox3";
-            siticoneControlBox3.ShadowDecoration.BorderRadius = 20;
-            siticoneControlBox3.ShadowDecoration.Depth = 5;
-            siticoneControlBox3.ShadowDecoration.Enabled = true;
-            siticoneControlBox3.Size = new Size(36, 36);
-            siticoneControlBox3.TabIndex = 8;
             // 
             // MainForm
             // 
