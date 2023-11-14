@@ -42,6 +42,7 @@
             siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(components);
             siticoneDragControl1 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(components);
+            linkLabel1 = new LinkLabel();
             siticoneCustomGradientPanel1.SuspendLayout();
             siticoneCustomGradientPanel2.SuspendLayout();
             siticonePanel1.SuspendLayout();
@@ -51,6 +52,7 @@
             // 
             siticoneCustomGradientPanel1.BackColor = Color.Transparent;
             siticoneCustomGradientPanel1.BorderRadius = 30;
+            siticoneCustomGradientPanel1.Controls.Add(linkLabel1);
             siticoneCustomGradientPanel1.Controls.Add(btnLogin);
             siticoneCustomGradientPanel1.Controls.Add(txtPassword2);
             siticoneCustomGradientPanel1.Controls.Add(txtPassword1);
@@ -76,7 +78,7 @@
             btnLogin.FillColor2 = Color.FromArgb(94, 148, 255);
             btnLogin.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(85, 354);
+            btnLogin.Location = new Point(85, 340);
             btnLogin.Name = "btnLogin";
             btnLogin.ShadowDecoration.BorderRadius = 30;
             btnLogin.ShadowDecoration.Depth = 5;
@@ -98,7 +100,7 @@
             txtPassword2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassword2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtPassword2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPassword2.Location = new Point(85, 282);
+            txtPassword2.Location = new Point(85, 268);
             txtPassword2.Name = "txtPassword2";
             txtPassword2.PasswordChar = '●';
             txtPassword2.PlaceholderText = "new password";
@@ -122,7 +124,7 @@
             txtPassword1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassword1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtPassword1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPassword1.Location = new Point(85, 212);
+            txtPassword1.Location = new Point(85, 198);
             txtPassword1.Name = "txtPassword1";
             txtPassword1.PasswordChar = '●';
             txtPassword1.PlaceholderText = "new password";
@@ -146,7 +148,7 @@
             txtLogin.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtLogin.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtLogin.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtLogin.Location = new Point(85, 145);
+            txtLogin.Location = new Point(85, 131);
             txtLogin.Name = "txtLogin";
             txtLogin.PasswordChar = '\0';
             txtLogin.PlaceholderText = "login";
@@ -162,7 +164,7 @@
             siticoneHtmlLabel1.BackColor = Color.Transparent;
             siticoneHtmlLabel1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             siticoneHtmlLabel1.ForeColor = Color.FromArgb(28, 28, 28);
-            siticoneHtmlLabel1.Location = new Point(85, 69);
+            siticoneHtmlLabel1.Location = new Point(79, 51);
             siticoneHtmlLabel1.Name = "siticoneHtmlLabel1";
             siticoneHtmlLabel1.Size = new Size(254, 33);
             siticoneHtmlLabel1.TabIndex = 0;
@@ -237,6 +239,18 @@
             siticoneDragControl1.TargetControl = siticonePanel1;
             siticoneDragControl1.UseTransparentDrag = true;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.LinkColor = Color.FromArgb(28, 28, 28);
+            linkLabel1.Location = new Point(185, 448);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(51, 20);
+            linkLabel1.TabIndex = 8;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Назад";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked_1;
+            // 
             // NewPasswordForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -271,5 +285,6 @@
         private Siticone.Desktop.UI.WinForms.SiticoneDragControl siticoneDragControl1;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtPassword2;
         private Siticone.Desktop.UI.WinForms.SiticoneGradientButton btnLogin;
+        private LinkLabel linkLabel1;
     }
 }

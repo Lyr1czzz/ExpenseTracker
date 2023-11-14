@@ -70,5 +70,12 @@ namespace ExpenseTracker.Forms
         {
             Environment.Exit(0);
         }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegistrationForm registrationForm = new RegistrationForm();
+            registrationForm.Show();
+            this.Hide();
+        }
     }
 }

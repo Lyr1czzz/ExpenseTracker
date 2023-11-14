@@ -17,5 +17,7 @@ public partial class Note
 
     public decimal? Brprice { get; set; }
 
+    public DateTime Date { get; set; }
+
     public virtual Category? Category { get; set; }
 }

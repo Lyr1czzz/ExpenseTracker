@@ -58,7 +58,7 @@ public partial class ExpenseTrakerDbContext : DbContext
             entity.Property(e => e.Text)
                 .HasMaxLength(50)
                 .HasColumnName("text");
-
+            entity.Property(e => e.Date).HasColumnName("date");
             entity.HasOne(d => d.Category).WithMany(p => p.Notes)
                 .HasForeignKey(d => d.Categoryid)
                 .HasConstraintName("note_categoryid_fkey");

@@ -47,8 +47,7 @@ namespace ExpenseTracker.Forms
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 if (txtPrice.Text == string.Empty) return;
                 ExpenseTrakerDbContext _db = new ExpenseTrakerDbContext();
                 var user = _db.Users.FirstOrDefault(u => u.Id == CurrentUser.userId);
@@ -94,7 +93,8 @@ namespace ExpenseTracker.Forms
                     Text = txtText.Text,
                     Usdprice = usdprice,
                     Brprice = brprice,
-                    Ruprice = ruprice
+                    Ruprice = ruprice,
+                    Date = DateTime.Now.ToUniversalTime(),
                 };
                 _db.Notes.Add(note);
 
@@ -106,11 +106,6 @@ namespace ExpenseTracker.Forms
                 UpdateInterface.UpdateBalance(mainForm);
                 txtPrice.Clear();
                 txtText.Clear();
-            }
-            catch
-            {
-                MessageBox.Show("Ошибка ввода");
-            }
         }
     }
 }

@@ -27,5 +27,15 @@ namespace ExpenseTracker.Forms
         {
 
         }
+
+        private void pnlDiagram_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSetFilter_Click(object sender, EventArgs e)
+        {
+            UpdateInterface.UpdateDiagram(mainForm, this, dateTime1.Value, dateTime2.Value);
+        }
     }
 }
