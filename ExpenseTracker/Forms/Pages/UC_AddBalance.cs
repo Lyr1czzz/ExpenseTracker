@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,24 +26,31 @@ namespace ExpenseTracker.Forms
 
         private void btnAddBalance_Click(object sender, EventArgs e)
         {
-            ExpenseTrakerDbContext dbContext = new ExpenseTrakerDbContext();
-            var user = dbContext.Users.FirstOrDefault(u => u.Id == CurrentUser.userId);
-            if (user != null)
+            try
             {
-                try
+                ExpenseTrakerDbContext dbContext = new ExpenseTrakerDbContext();
+                var user = dbContext.Users.FirstOrDefault(u => u.Id == CurrentUser.userId);
+                if (user != null)
                 {
-                    user.Usdbalance += decimal.Parse(txtPrice.Text) / 3;
-                    user.Brbalance += decimal.Parse(txtPrice.Text);
-                    user.Rubalance += decimal.Parse(txtPrice.Text) * 30;
+                    try
+                    {
+                        user.Usdbalance += decimal.Parse(txtPrice.Text) / 3;
+                        user.Brbalance += decimal.Parse(txtPrice.Text);
+                        user.Rubalance += decimal.Parse(txtPrice.Text) * 30;
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Ошибка ввода");
+                        return;
+                    }
+                    dbContext.SaveChanges();
+                    txtPrice.Clear();
+                    UpdateInterface.UpdateBalance(mainForm);
                 }
-                catch
-                {
-                    MessageBox.Show("Ошибка ввода");
-                    return;
-                }
-                dbContext.SaveChanges();
-                txtPrice.Clear();
-                UpdateInterface.UpdateBalance(mainForm);
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка пополнения!");
             }
         }
     }

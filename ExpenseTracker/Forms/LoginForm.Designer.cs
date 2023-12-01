@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             siticoneCustomGradientPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
+            linkLabel2 = new LinkLabel();
             linkLabel1 = new LinkLabel();
             btnLogin = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
             txtPassword = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
@@ -42,7 +43,6 @@
             siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(components);
             siticoneDragControl1 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(components);
-            linkLabel2 = new LinkLabel();
             siticoneCustomGradientPanel1.SuspendLayout();
             siticoneCustomGradientPanel2.SuspendLayout();
             siticonePanel1.SuspendLayout();
@@ -65,6 +65,18 @@
             siticoneCustomGradientPanel1.ShadowDecoration.Enabled = true;
             siticoneCustomGradientPanel1.Size = new Size(420, 487);
             siticoneCustomGradientPanel1.TabIndex = 0;
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.LinkColor = Color.FromArgb(28, 28, 28);
+            linkLabel2.Location = new Point(211, 434);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(124, 20);
+            linkLabel2.TabIndex = 5;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Забыли пароль?";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // linkLabel1
             // 
@@ -226,18 +238,6 @@
             siticoneDragControl1.DragStartTransparencyValue = 1D;
             siticoneDragControl1.TargetControl = siticonePanel1;
             siticoneDragControl1.UseTransparentDrag = true;
-            // 
-            // linkLabel2
-            // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.LinkColor = Color.FromArgb(28, 28, 28);
-            linkLabel2.Location = new Point(211, 434);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(124, 20);
-            linkLabel2.TabIndex = 5;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Забыли пароль?";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // LoginForm
             // 

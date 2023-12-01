@@ -33,6 +33,8 @@
             siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(components);
             siticoneDragControl1 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(components);
             siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             siticoneCustomGradientPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
             txtPassword2 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             linkLabel1 = new LinkLabel();
@@ -41,8 +43,6 @@
             txtLogin = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             siticoneHtmlLabel1 = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
             siticoneCustomGradientPanel2 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
-            siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
-            siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             siticonePanel1.SuspendLayout();
             siticoneCustomGradientPanel1.SuspendLayout();
             siticoneCustomGradientPanel2.SuspendLayout();
@@ -71,6 +71,37 @@
             siticonePanel1.Name = "siticonePanel1";
             siticonePanel1.Size = new Size(1151, 660);
             siticonePanel1.TabIndex = 9;
+            // 
+            // siticoneControlBox2
+            // 
+            siticoneControlBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            siticoneControlBox2.BackColor = Color.Transparent;
+            siticoneControlBox2.BorderRadius = 15;
+            siticoneControlBox2.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
+            siticoneControlBox2.FillColor = Color.FromArgb(94, 148, 255);
+            siticoneControlBox2.IconColor = Color.White;
+            siticoneControlBox2.Location = new Point(1062, 12);
+            siticoneControlBox2.Name = "siticoneControlBox2";
+            siticoneControlBox2.ShadowDecoration.BorderRadius = 20;
+            siticoneControlBox2.ShadowDecoration.Depth = 5;
+            siticoneControlBox2.ShadowDecoration.Enabled = true;
+            siticoneControlBox2.Size = new Size(36, 36);
+            siticoneControlBox2.TabIndex = 8;
+            // 
+            // siticoneControlBox1
+            // 
+            siticoneControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            siticoneControlBox1.BackColor = Color.Transparent;
+            siticoneControlBox1.BorderRadius = 15;
+            siticoneControlBox1.FillColor = Color.FromArgb(94, 148, 255);
+            siticoneControlBox1.IconColor = Color.White;
+            siticoneControlBox1.Location = new Point(1104, 12);
+            siticoneControlBox1.Name = "siticoneControlBox1";
+            siticoneControlBox1.ShadowDecoration.BorderRadius = 20;
+            siticoneControlBox1.ShadowDecoration.Depth = 5;
+            siticoneControlBox1.ShadowDecoration.Enabled = true;
+            siticoneControlBox1.Size = new Size(36, 36);
+            siticoneControlBox1.TabIndex = 7;
             // 
             // siticoneCustomGradientPanel1
             // 
@@ -113,6 +144,7 @@
             txtPassword2.Size = new Size(250, 45);
             txtPassword2.TabIndex = 5;
             txtPassword2.UseSystemPasswordChar = true;
+            txtPassword2.KeyPress += txtPassword2_KeyPress;
             // 
             // linkLabel1
             // 
@@ -171,6 +203,7 @@
             txtPassword1.Size = new Size(250, 45);
             txtPassword1.TabIndex = 2;
             txtPassword1.UseSystemPasswordChar = true;
+            txtPassword1.KeyPress += txtPassword1_KeyPress;
             // 
             // txtLogin
             // 
@@ -194,6 +227,7 @@
             txtLogin.ShadowDecoration.Enabled = true;
             txtLogin.Size = new Size(250, 45);
             txtLogin.TabIndex = 1;
+            txtLogin.KeyPress += txtLogin_KeyPress;
             // 
             // siticoneHtmlLabel1
             // 
@@ -217,37 +251,6 @@
             siticoneCustomGradientPanel2.Name = "siticoneCustomGradientPanel2";
             siticoneCustomGradientPanel2.Size = new Size(1151, 660);
             siticoneCustomGradientPanel2.TabIndex = 7;
-            // 
-            // siticoneControlBox2
-            // 
-            siticoneControlBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            siticoneControlBox2.BackColor = Color.Transparent;
-            siticoneControlBox2.BorderRadius = 15;
-            siticoneControlBox2.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
-            siticoneControlBox2.FillColor = Color.FromArgb(94, 148, 255);
-            siticoneControlBox2.IconColor = Color.White;
-            siticoneControlBox2.Location = new Point(1062, 12);
-            siticoneControlBox2.Name = "siticoneControlBox2";
-            siticoneControlBox2.ShadowDecoration.BorderRadius = 20;
-            siticoneControlBox2.ShadowDecoration.Depth = 5;
-            siticoneControlBox2.ShadowDecoration.Enabled = true;
-            siticoneControlBox2.Size = new Size(36, 36);
-            siticoneControlBox2.TabIndex = 8;
-            // 
-            // siticoneControlBox1
-            // 
-            siticoneControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            siticoneControlBox1.BackColor = Color.Transparent;
-            siticoneControlBox1.BorderRadius = 15;
-            siticoneControlBox1.FillColor = Color.FromArgb(94, 148, 255);
-            siticoneControlBox1.IconColor = Color.White;
-            siticoneControlBox1.Location = new Point(1104, 12);
-            siticoneControlBox1.Name = "siticoneControlBox1";
-            siticoneControlBox1.ShadowDecoration.BorderRadius = 20;
-            siticoneControlBox1.ShadowDecoration.Depth = 5;
-            siticoneControlBox1.ShadowDecoration.Enabled = true;
-            siticoneControlBox1.Size = new Size(36, 36);
-            siticoneControlBox1.TabIndex = 7;
             // 
             // RegistrationForm
             // 

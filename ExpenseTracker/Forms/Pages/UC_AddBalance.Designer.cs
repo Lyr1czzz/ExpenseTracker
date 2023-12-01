@@ -111,7 +111,7 @@
             txtPrice.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtPrice.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPrice.Location = new Point(300, 260);
-            txtPrice.MaxLength = 20;
+            txtPrice.MaxLength = 10;
             txtPrice.Name = "txtPrice";
             txtPrice.PasswordChar = '\0';
             txtPrice.PlaceholderText = "price";

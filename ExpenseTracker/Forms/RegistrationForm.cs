@@ -35,7 +35,7 @@ namespace ExpenseTracker.Forms
                 MessageBox.Show("Пользователь с таким именем уже существует!");
                 return;
             }
-            if(txtLogin.Text.Length < 5 || txtLogin.Text.Length > 20)
+            if (txtLogin.Text.Length < 5 || txtLogin.Text.Length > 20)
             {
                 MessageBox.Show("Имя пользователя должно содержать от 5 до 20 символов!");
                 return;
@@ -73,6 +73,30 @@ namespace ExpenseTracker.Forms
         private void RegistrationForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void txtLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) && e.KeyChar >= 'А' && e.KeyChar <= 'я')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPassword1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) && e.KeyChar >= 'А' && e.KeyChar <= 'я')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPassword2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) && e.KeyChar >= 'А' && e.KeyChar <= 'я')
+            {
+                e.Handled = true;
+            }
         }
     }
 }
